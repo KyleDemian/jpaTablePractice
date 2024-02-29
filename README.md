@@ -19,4 +19,11 @@
 
 - 트랜잭션관리 ( 더티체킹 ) : JPA에서는 해당 엔티티가 영속성 컨텍스트가 정상 동작하는지 확인이 필요로 함  
 
+Member (1) : Order (N)
+Order (1) : Delvery (1)
+Order (1) : OrderItem(N)
+OrderItem(N) : Item(1)
+Item(N) : Category(M)
+* ManyToMany 의 경우 1:N N:1 의관계로 풀어서 테이블 저장 가능함
+
 ref. 자바 ORM 표준 JPA 프로그래밍
